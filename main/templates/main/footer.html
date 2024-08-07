@@ -1,0 +1,20 @@
+<!-- ================================
+    Start Footer
+    ================================= -->
+    <footer>
+        <div class="footerCol">
+          <div class="container">
+            <ul class="socialCol">
+            {% for logo in logos %}
+              <li><a href="{{logo.url}}"><img src="{{ logo.image.url }}" alt="..."></a></li>
+              {% endfor %}
+            </ul>
+            <div class="copyrightCol">
+              <p>Copyright ©2024 All rights reserved. Designed by <strong>Gaurab Neupane</strong></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ================================
+      End Footer
+      ================================= -->

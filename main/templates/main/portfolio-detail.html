@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+    <!-- ================================
+    Start Navigation Bar
+    ================================= -->
+    {% include 'main/navbar.html' %}
+    <!-- ================================
+    End Navigation Bar
+    ================================= -->
+
+    <!-- ================================
+    Start Content
+    ================================= -->
+    <section>
+      <div class="innerPageBannerCol">
+        <div class="container">
+          <div class="row g-4 g-md-3 align-items-center">
+            <div class="col-md-6">
+              <div class="bannerContent">
+                <h1 class="xlTitle">{{ portfolio.name }}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sectionSpaceSm">
+        <div class="container">
+          {% if portfolio.image %}
+            <div class="portfolio-image mb-5">
+              <img src="{{ portfolio.image.url }}" alt="{{ portfolio.name }}" class="img-fluid">
+            </div>
+          {% endif %}
+          <p>{{ portfolio.description }}</p>
+        </div>
+      </div>
+    </section>
+    <!-- ================================
+    End Content
+    ================================= -->
+
+    <!-- ================================
+    Start Footer
+    ================================= -->
+    {% include 'main/footer.html' %}
+    <!-- ================================
+    End Footer
+    ================================= -->
+
+{% endblock content %}
