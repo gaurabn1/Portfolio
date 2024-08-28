@@ -157,5 +157,6 @@ TINYMCE_SPELLCHECKER = True
 CSRF_TRUSTED_ORIGINS = [
     'https://01b3-49-236-212-150.ngrok-free.app',
     'https://portfolio-git-main-gaurab.vercel.app/',
+    'https://portfolio-gaurab.vercel.app/',
 ]
 
