@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "manage.py",
+        "src": "serverless_function.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" }
       }
@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "manage.py"
+        "dest": "serverless_function.py"
       }
     ]
   }
