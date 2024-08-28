@@ -1,17 +1,8 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "manage.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "manage.py"
-      }
-    ]
+  "functions": {
+    "manage.py": {
+      "runtime": "python4.2.11",
+      "handler": "resume.wsgi.application"
+    }
   }
-  
+}
