@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6di*m&&w1f6av*d4c0#ajfj^q7%6_cz9x(je5@cguew2l0k@bl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '*.vercel.app']
 
 
 # Application definition
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'resume.wsgi.application'
+WSGI_APPLICATION = 'resume.wsgi.app'
 
 
 # Database
@@ -156,7 +156,6 @@ TINYMCE_SPELLCHECKER = True
 
 CSRF_TRUSTED_ORIGINS = [
     'https://01b3-49-236-212-150.ngrok-free.app',
-    '*vercel.app',
     'https://portfolio-olive-tau-87.vercel.app',
 ]
 
