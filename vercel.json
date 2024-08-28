@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "resume/wsgi.py",
+        "src": "manage.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" }
       }
@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "resume/wsgi.py"
+        "dest": "manage.py"
       }
     ]
   }
